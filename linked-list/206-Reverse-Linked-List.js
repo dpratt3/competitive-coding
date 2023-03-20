@@ -18,20 +18,32 @@ David Pratt
  */
 
 // iterative
-var reverseList = function(head) {
-    let prev = null;
-    let curr = head;
+// var reverseList = function(head) {
+//     let prev = null;
+//     let curr = head;
 
-    while(curr){
-        let forward = curr.next;
-        curr.next = prev;
-        prev = curr;
-        curr = forward;
-    }
+//     while(curr){
+//         let forward = curr.next;
+//         curr.next = prev;
+//         prev = curr;
+//         curr = forward;
+//     }
 
-    return prev;   
-};
+//     return prev;   
+// };
 
 // recursive approach: https://www.youtube.com/watch?v=G0_I-ZF0S38
 
+var reverseList = (head) => {
+    if(!head) return null
+    
+    let newHead = head;
+    if(head.next){
+        newHead = reverseList(head.next);
+        head.next.next = head;
+        // console.log(head.val)
+    }
 
+    head.next = null;
+    return newHead 
+}
