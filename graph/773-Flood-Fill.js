@@ -25,7 +25,7 @@ David Pratt
 performFloodFill = (image, sr, sc, rows, columns, source, color) => {
   // if indices are out of bounds, return
   if (sr < 0 || sc < 0 || sr >= rows || sc >= columns) return;
-  if (image[sr][sc] != source || image[sr][sc] === color) return;
+  if (image[sr][sc] !== source || image[sr][sc] === color) return;
 
   image[sr][sc] = color;
 
