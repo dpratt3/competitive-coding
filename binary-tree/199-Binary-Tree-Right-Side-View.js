@@ -34,7 +34,7 @@ var rightSideView = function(root) {
          }
          visited.push(levNodes)
     }
-
+    
     // same as return array of arrays representing levels
     return visited.map(arr => arr[arr.length - 1]);
 };

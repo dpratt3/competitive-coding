@@ -1,3 +1,11 @@
+/*
+1. Two Sum
+16 March 2023
+https://leetcode.com/problems/two-sum/
+David Pratt
+*/
+
+
 /**
  * @param {number[]} nums
  * @param {number} target
