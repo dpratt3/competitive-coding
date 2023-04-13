@@ -3,7 +3,7 @@
 https://leetcode.com/problems/count-items-matching-a-rule/
 12 April 2023
 David Pratt
-*
+*/
 
 /**
  * @param {string[][]} items
