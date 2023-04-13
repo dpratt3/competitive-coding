@@ -10,17 +10,17 @@ David Pratt
  * @return {string}
  */
 
-const numberGather = (word) => word[word.length - 1]
+const numberGather = (word) => word[word.length - 1];
 
-var sortSentence = function(s) {
-    let splitS = s.split(' ')
-    const indices = splitS.map(word => Number(numberGather(word)))
+var sortSentence = function (s) {
+  let splitS = s.split(" ");
+  const indices = splitS.map((word) => Number(numberGather(word)));
 
-    let newArr = []
-    for(let i = 0; i < splitS.length; i++){
-        newArr[indices[i] - 1] = splitS[i]
-    }
-    const finalSentence = newArr.map(x => x.slice(0, -1)).join(' ')
-    
-    return finalSentence;
+  let newArr = [];
+  for (let i = 0; i < splitS.length; i++) {
+    newArr[indices[i] - 1] = splitS[i];
+  }
+  const finalSentence = newArr.map((x) => x.slice(0, -1)).join(" ");
+
+  return finalSentence;
 };
