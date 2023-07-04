@@ -1,7 +1,7 @@
 /*
 345. Reverse Vowels of a String
 https://leetcode.com/problems/reverse-vowels-of-a-string/
-26 June 2023
+3 July 2023
 David Pratt
 */
 
@@ -11,7 +11,7 @@ David Pratt
  */
 
 var reverseVowels = function(s) {
-    const vowels = "aeiou"
+    const vowels = "aeiouAEIOU"
     let splitS = s.split('')
     let filteredVowels = splitS.filter(x => vowels.includes(x)).reverse();
 
