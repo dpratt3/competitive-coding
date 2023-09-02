@@ -13,7 +13,7 @@ const longestNonRepeatingSubstring = function (string) {
   if (new Set(string.split("")).size === 1) return 1;
 
   let allSubs = [];
-  for (let j = 1; j < string.length; j += 1) {
+  for (let j = 1; j <= string.length; j += 1) {
     for (let i = 0; i < string.length; i += 1) {
       allSubs.push(string.slice(i, j));
     }
